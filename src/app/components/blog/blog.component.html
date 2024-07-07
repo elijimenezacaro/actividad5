@@ -1,1 +1,35 @@
-<p>blog works!</p>
+<div class="contenedor-blog">
+    <h1>Blog de Noticias</h1>
+  
+    <div class="contenido">
+      <!-- Formulario para añadir nuevas noticias -->
+      <div class="contenedor-formulario">
+        <h2>Añadir Noticia</h2>
+        <div class="grupo-formulario">
+          <label for="titulo">Título:</label>
+          <input type="text" id="titulo" [(ngModel)]="nuevaNoticia.titulo" placeholder="Introduce el título de la noticia">
+        </div>
+        <div class="grupo-formulario">
+          <label for="imagen">Imagen (URL de la foto):</label>
+          <input type="url" id="imagen" [(ngModel)]="nuevaNoticia.imagen" placeholder="Introduce la URL de la imagen">
+        </div>
+        <div class="grupo-formulario">
+          <label for="texto">Texto o cuerpo de la noticia:</label>
+          <textarea id="texto" [(ngModel)]="nuevaNoticia.texto" placeholder="Introduce el texto de la noticia"></textarea>
+        </div>
+        <div class="grupo-formulario">
+          <label for="fecha">Fecha de la publicación:</label>
+          <input type="date" id="fecha" [(ngModel)]="nuevaNoticia.fecha">
+        </div>
+        <button (click)="alHacerClicEnAgregarNoticia($event, nuevaNoticia)">Añadir</button>
+        <p id="mensaje-de-error" class="error"></p>
+      </div>
+  
+      <!-- Lista de noticias -->
+      <div class="lista-noticias">
+        <h2>Listado de Noticias</h2>
+        <div id="contenedor-noticias"></div>
+      </div>
+    </div>
+  </div>
+  

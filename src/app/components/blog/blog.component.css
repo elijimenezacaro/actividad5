@@ -1,0 +1,62 @@
+.contenedor-blog {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0b3f42;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-formulario,
+.lista-noticias {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.grupo-formulario {
+  margin-bottom: 10px;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.grupo-formulario button {
+  padding: 10px;
+  background-color: #007bff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.lista-noticias .noticia {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.error {
+  color: rgb(119, 17, 17);
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(180, 103, 40);
+}
+
+h2 {
+  color: rgb(5, 124, 88);
+}
